@@ -7,15 +7,18 @@
 #    http://shiny.rstudio.com/
 #
 #install.packages("shiny")
+#install.packages("rsconnect")
 #call relevant libraries
+setwd("~/BIO8068_prac/BIO8068_Assignment_Part-3")
 library(shiny)
 library(raster)
 library(leafem)
 library(leaflet)
 library(ggplot2)
+library(rsconnect)
 
 #read in data
-setwd("~/BIO8068_prac/BIO8068_Assignment_Part-3")
+
 elevation_ll<-readRDS("www/elevation.rds")
 settlements<-readRDS("www/settlements1.rds")
 lakes<-readRDS("www/lakes1.rds")
