@@ -67,7 +67,7 @@ ui <- fluidPage(
         mainPanel( p("The rural environment of Cumbria boasts rich diversity, both in terms of species and landscapes.
                      This interactive webpage shows a map of the elevation denoting Cumbria's hilly landscape, rivers, lakes and settlements.
                      Additionally the map shows the 2019 counts of three bird species; the European Robin, the Great Tit and the Redwing.
-                     Finally the histograms shown on this webpage give an indication of the changes in populations of these species using count data
+                     Finally the graphs shown on this webpage give an indication of the changes in populations of these species using count data
                      from the years 2016 to 2019"),
                    leafletOutput(outputId = "map"),
                    p("Below are histograms showing European Robin, Great Tit and Redwing counts over time. 
@@ -75,7 +75,7 @@ ui <- fluidPage(
                    plotOutput(outputId = "robin_plot"),
                    plotOutput(outputId = "greattit_plot"),
                    plotOutput(outputId = "redwing_plot"),
-                   p("Looking at these histograms; there have been large increases in the number of birds observed in 2019,
+                   p("Looking at these graphs; there have been large increases in the number of birds observed in 2019,
                      which could indicate a rise in their populations or an increased participation in citizen science in 2019.")
         
                   )
